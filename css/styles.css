@@ -360,19 +360,8 @@ small,.small{color:var(--muted); font-size:.95rem}
   font-size:.95rem;
 }
 
-.sticky-donate{
-  position:fixed;
-  left:0; right:0; bottom:0;
-  background:rgba(255,255,255,.96);
-  backdrop-filter: blur(10px);
-  border-top:1px solid rgba(44,62,80,.12);
-  box-shadow:0 -10px 30px rgba(44,62,80,.14);
-  padding:10px 0;
-  z-index:1200;
-}
-.sticky-donate .inner{
-  display:flex; align-items:center; justify-content:space-between; gap:12px;
-}
+
+
 .amounts{display:flex; gap:8px; flex-wrap:wrap}
 .pill-btn{
   border:1px solid rgba(44,62,80,.14);
@@ -385,8 +374,8 @@ small,.small{color:var(--muted); font-size:.95rem}
 }
 .pill-btn:hover{box-shadow:var(--shadow-soft)}
 .pill-btn.active{border-color:var(--primary); color:var(--primary)}
-.sticky-donate .note{font-weight:900; color:var(--text)}
-.sticky-donate .hide-on-desktop{display:none}
+
+
 
 .form-row{display:flex; gap:12px; flex-wrap:wrap}
 .range{
@@ -411,7 +400,7 @@ small,.small{color:var(--muted); font-size:.95rem}
 @media (max-width: 768px){
   .nav-links{display:none}
   .mobile-toggle{display:inline-flex}
-  .sticky-donate .hide-on-desktop{display:inline-flex}
+  
   .hero{min-height:auto}
   .hero-inner{padding:64px 0 70px}
   .hero p{font-size:1.15rem}
@@ -506,10 +495,10 @@ small,.small{color:var(--muted); font-size:.95rem}
   .grid-4{grid-template-columns:1fr}
 
   body{padding-bottom:120px}
-  .sticky-donate .inner{flex-direction:column; align-items:stretch}
-  .sticky-donate .note{width:100%; text-align:center}
-  .sticky-donate .amounts{justify-content:center}
-  .sticky-donate a.btn{width:100%; justify-content:center}
+  
+  
+  
+  
 
   .footer .cols{grid-template-columns:1fr}
 }
