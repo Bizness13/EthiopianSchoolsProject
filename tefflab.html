@@ -14,11 +14,43 @@
   <meta property="og:url" content="https://bizness13.github.io/EthiopianSchoolsProject/about.html" />
 </head>
 <body>
-<!-- Full-image rendering styles for memorial page -->
+
 <style>
-.tefflab-fullimg{background:#fff;padding:10px;border-radius:14px;}
-.tefflab-fullimg img{width:100%;height:auto;object-fit:contain;display:block;background:#f3f4f6;border-radius:10px;}
+/* Keep full image visible while giving it a premium framed look */
+.tefflab-media{margin-top:18px}
+.tefflab-frame{
+  border-radius:18px;
+  overflow:hidden;
+  background: radial-gradient(1200px 500px at 20% 0%, rgba(0,78,137,.10), transparent 60%),
+              radial-gradient(900px 420px at 90% 20%, rgba(247,184,1,.10), transparent 55%),
+              #ffffff;
+  border:1px solid rgba(44,62,80,.10);
+  box-shadow: 0 14px 34px rgba(0,0,0,.10);
+  padding:14px;
+}
+.tefflab-frame img{
+  width:100%;
+  height:auto;
+  max-height:560px;
+  object-fit:contain;
+  display:block;
+  border-radius:12px;
+  background:#f3f4f6;
+}
+@media (max-width: 900px){
+  .tefflab-frame{padding:10px;border-radius:16px}
+  .tefflab-frame img{max-height:520px}
+}
+@media (max-width: 520px){
+  .tefflab-frame{padding:8px;border-radius:14px}
+  .tefflab-frame img{max-height:460px}
+}
+
+/* Make the images “pop” a bit more */
+.tefflab-frame:hover{transform:translateY(-2px);box-shadow:0 18px 44px rgba(0,0,0,.14)}
+.tefflab-frame{transition:transform .18s ease, box-shadow .18s ease}
 </style>
+
 <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container">
@@ -98,15 +130,15 @@
         </div>
 
         <div class="grid" style="grid-template-columns:repeat(3, 1fr); gap:18px">
-          <figure class="card tefflab-fullimg" style="padding:0; overflow:hidden">
+          <figure class="card tefflab-frame">
             <img src="images/IMG_1368.jpg" alt="Sasu with his mother" loading="lazy" style="width:100%; height:auto; object-fit:contain">
             <figcaption style="padding:14px 16px; color:var(--muted)">Family love and heritage at the heart of his story.</figcaption>
           </figure>
-          <figure class="card tefflab-fullimg" style="padding:0; overflow:hidden">
+          <figure class="card tefflab-frame">
             <img src="images/IMG_0249.jpg" alt="Sasu being read to by his father" loading="lazy" style="width:100%; height:auto; object-fit:contain">
             <figcaption style="padding:14px 16px; color:var(--muted)">A childhood shaped by books, learning, and encouragement.</figcaption>
           </figure>
-          <figure class="card tefflab-fullimg" style="padding:0; overflow:hidden">
+          <figure class="card tefflab-frame">
             <img src="images/IMG_0248.jpg" alt="Sasu with his father on a school day" loading="lazy" style="width:100%; height:auto; object-fit:contain">
             <figcaption style="padding:14px 16px; color:var(--muted)">Education and family support—always side by side.</figcaption>
           </figure>
@@ -127,7 +159,7 @@
         </div>
 
         <div class="grid" style="grid-template-columns:1.1fr .9fr; gap:18px">
-          <div class="card tefflab-fullimg" style="padding:0; overflow:hidden">
+          <div class="card tefflab-frame">
             <img src="images/IMG_0251.jpg" alt="Sasu in tulip fields as a child" loading="lazy" style="width:100%; height:auto; object-fit:contain">
           </div>
           <div class="card">
@@ -169,7 +201,7 @@
               <li><strong>Community:</strong> farmers markets and pop-ups as a place to connect</li>
             </ul>
           </div>
-          <figure class="card tefflab-fullimg" style="padding:0; overflow:hidden">
+          <figure class="card tefflab-frame">
             <img src="images/DSCF0326.jpg" alt="Portrait of Sasu" loading="lazy" style="width:100%; height:auto; object-fit:contain">
             <figcaption style="padding:14px 16px; color:var(--muted)">A vision rooted in culture, community, and compassion.</figcaption>
           </figure>
@@ -190,15 +222,15 @@
         </div>
 
         <div class="grid" style="grid-template-columns:repeat(3, 1fr); gap:18px">
-          <figure class="card tefflab-fullimg" style="padding:0; overflow:hidden">
+          <figure class="card tefflab-frame">
             <img src="images/IMG_4179.jpg" alt="Sasu sharing TeffBar at a farmers market" loading="lazy" style="width:100%; height:auto; object-fit:contain">
             <figcaption style="padding:14px 16px; color:var(--muted)">Sharing TeffBar with the community—one conversation at a time.</figcaption>
           </figure>
-          <figure class="card tefflab-fullimg" style="padding:0; overflow:hidden">
+          <figure class="card tefflab-frame">
             <img src="images/IMG_0651.jpg" alt="TeffBar at a community market pop-up" loading="lazy" style="width:100%; height:auto; object-fit:contain">
             <figcaption style="padding:14px 16px; color:var(--muted)">Farmers markets and pop-ups: community, culture, connection.</figcaption>
           </figure>
-          <figure class="card tefflab-fullimg" style="padding:0; overflow:hidden">
+          <figure class="card tefflab-frame">
             <img src="images/IMG_7623.jpg" alt="Sasu at The Teff Lab booth" loading="lazy" style="width:100%; height:auto; object-fit:contain">
             <figcaption style="padding:14px 16px; color:var(--muted)">Building a legacy through TeffLab—innovation with purpose.</figcaption>
           </figure>
@@ -220,7 +252,7 @@
         </div>
 
         <div class="grid" style="grid-template-columns:1fr 1fr; gap:18px; align-items:stretch">
-          <figure class="card tefflab-fullimg" style="padding:0; overflow:hidden">
+          <figure class="card tefflab-frame">
             <img src="images/IMG_0668.jpg" alt="Sasu with family at Ethiopian community event" loading="lazy" style="width:100%; height:auto; object-fit:contain">
           </figure>
           <div class="card">

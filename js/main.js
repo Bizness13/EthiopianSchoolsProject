@@ -1,12 +1,10 @@
-// Ethiopian Schools Project — Interaction layer (lightweight, accessible)
+
 (function () {
   const $ = (sel, root = document) => root.querySelector(sel);
   const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 
-  // Current year
   $$('[data-year]').forEach((el) => (el.textContent = String(new Date().getFullYear())));
 
-  // Sticky header shadow
   const header = $('.site-header');
   const onScroll = () => {
     if (!header) return;
@@ -15,7 +13,6 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  // Mobile nav
   const toggle = $('[data-mobile-toggle]');
   const panel = $('[data-mobile-panel]');
   if (toggle && panel) {
@@ -23,7 +20,7 @@
       const open = panel.classList.toggle('open');
       toggle.setAttribute('aria-expanded', String(open));
     });
-    // Close on link click
+    
     $$('a', panel).forEach((a) =>
       a.addEventListener('click', () => {
         panel.classList.remove('open');
@@ -32,7 +29,6 @@
     );
   }
 
-  // Animated counters (IntersectionObserver)
   const counters = $$('[data-count-to]');
   if (counters.length) {
     const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -44,7 +40,7 @@
       const from = 0;
       const step = (t) => {
         const p = duration === 0 ? 1 : Math.min(1, (t - start) / duration);
-        const val = Math.round(from + (to - from) * (p * (2 - p))); // easeOutQuad
+        const val = Math.round(from + (to - from) * (p * (2 - p))); 
         el.textContent = val.toLocaleString() + suffix;
         if (p < 1) requestAnimationFrame(step);
       };
@@ -66,7 +62,6 @@
     counters.forEach((c) => io.observe(c));
   }
 
-  // Testimonials carousel
   const carousel = $('[data-carousel]');
   if (carousel) {
     const track = $('[data-carousel-track]', carousel);
@@ -107,7 +102,6 @@
     start();
   }
 
-  // Interactive map hotspots
   const map = $('[data-map]');
   if (map) {
     const tooltip = $('[data-tooltip]', map);
@@ -147,7 +141,6 @@
     });
   }
 
-  // Sticky donation bar: quick amounts + deep-link to donate page
   const bar = $('[data-sticky-donate]');
   if (bar) {
     const amountBtns = $$('[data-amount]', bar);
@@ -170,7 +163,6 @@
     setSelected('50');
   }
 
-  // Donation impact calculator (donate page)
   const calc = $('[data-calculator]');
   if (calc) {
     const range = $('[data-range]', calc);
