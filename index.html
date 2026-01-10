@@ -3,60 +3,43 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ethiopian Schools Project | Seattle, WA</title>
-  <meta name="description" content="Ethiopian Schools Project is a Seattle-based 501(c)(3) supporting education initiatives for students in Ethiopia." />
-  <meta name="theme-color" content="#0b0f14" />
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="assets/styles.css" />
-  <meta property="og:title" content="Ethiopian Schools Project | Seattle, WA" />
-  <meta property="og:description" content="Ethiopian Schools Project is a Seattle-based 501(c)(3) supporting education initiatives for students in Ethiopia." />
+  <title>Ethiopian Schools Project | Seattle nonprofit supporting education in Ethiopia</title>
+  <meta name="description" content="Seattle-based 501(c)(3) public charity supporting education-focused school projects in Ethiopia." />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <meta property="og:title" content="Ethiopian Schools Project | Seattle nonprofit supporting education in Ethiopia" />
+  <meta property="og:description" content="Seattle-based 501(c)(3) public charity supporting education-focused school projects in Ethiopia." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://ethiopianschoolsproject.org/" />
-  <meta property="og:image" content="assets/img/logo.svg" />
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NonprofitOrganization", "name": "Ethiopian Schools Project", "url": "https://ethiopianschoolsproject.org", "taxID": "46-2259859", "address": {"@type": "PostalAddress", "addressLocality": "Seattle", "addressRegion": "WA", "addressCountry": "US"}}</script>
+  <meta property="og:url" content="https://ethiopianschoolsproject.org/index.html" />
+  <meta property="og:image" content="https://ethiopianschoolsproject.org/assets/og-image.png" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header>
     <div class="container">
-      <nav class="nav" aria-label="Primary">
-        <a class="brand" href="index.html">
-          <span class="mark" aria-hidden="true"></span>
-          <span class="title">
-            <strong>Ethiopian Schools Project</strong>
-            <span>Seattle, Washington • 501(c)(3)</span>
-          </span>
+      <div class="nav">
+        <a class="brand" href="index.html" aria-label="Ethiopian Schools Project home">
+          <img src="assets/logo.svg" alt="" />
+          <span>Ethiopian Schools Project</span>
         </a>
 
-        <div class="nav-links">
+        <nav id="primary-nav" class="nav-links" data-nav-links aria-label="Primary">
           <a href="index.html" aria-current="page">Home</a>
 <a href="about.html">About</a>
 <a href="programs.html">Programs</a>
 <a href="impact.html">Impact</a>
 <a href="donate.html">Donate</a>
 <a href="contact.html">Contact</a>
-        </div>
+        </nav>
 
-        <div class="cta">
-          <a class="btn ghost" href="contact.html">Get in touch</a>
-          <a class="btn primary" href="donate.html">Donate</a>
-          <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" data-menu-btn>Menu</button>
-        </div>
-      </nav>
-    </div>
-
-    <div class="drawer" data-drawer>
-      <div class="container">
-        <a href="index.html" aria-current="page">Home</a>
-<a href="about.html">About</a>
-<a href="programs.html">Programs</a>
-<a href="impact.html">Impact</a>
-<a href="donate.html">Donate</a>
-<a href="contact.html">Contact</a>
-        <div class="drawer-cta">
-          <a class="btn" href="contact.html">Get in touch</a>
-          <a class="btn primary" href="donate.html">Donate</a>
+        <div class="nav-actions">
+          <button class="btn mobile-toggle" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">
+            Menu
+          </button>
+          <a class="btn btn-primary" href="programs.html">What we do</a>
+          <a class="btn btn-donate" href="donate.html">Donate</a>
         </div>
       </div>
     </div>
@@ -65,102 +48,79 @@
   <main id="main">
     
 <section class="hero">
-  <div class="container hero-grid">
-    <div>
-      <div class="kicker"><span class="dot" aria-hidden="true"></span> Education support for students in Ethiopia</div>
-      <h1>Support Ethiopian students with community-powered school projects.</h1>
-      <p class="lede">
-        Ethiopian Schools Project is a Seattle-based 501(c)(3) public charity (EIN: 46-2259859).
-        Use this website to share your mission, show impact, and make it easy for supporters to get involved.
-      </p>
-
-      <div class="hero-actions">
-        <a class="btn primary" href="donate.html">Donate</a>
-        <a class="btn" href="programs.html">See programs</a>
-        <a class="btn" href="#video">Watch the video</a>
-      </div>
-
-      <div class="hr"></div>
-      <div class="note">
-        <strong>Replace this text with your official mission statement.</strong>
-        <div style="height:6px"></div>
-        <small>Tip: paste your mission in <em>index.html</em> (Home → Hero section). I’ve left placeholders so you can swap content without touching the design.</small>
-      </div>
-    </div>
-
-    <aside class="panel" aria-label="At a glance">
-      <div class="pad">
-        <strong style="font-size:1.05rem">At a glance</strong>
-        <div class="hr"></div>
-        <div class="stat-grid">
-          <div class="stat"><strong>Seattle, WA</strong><span>Home base</span></div>
-          <div class="stat"><strong>501(c)(3)</strong><span>Public charity</span></div>
-          <div class="stat"><strong>EIN 46-2259859</strong><span>Tax ID</span></div>
-          <div class="stat"><strong>Volunteer-led</strong><span>(edit as needed)</span></div>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-card">
+        <div class="kicker"><span class="dot" aria-hidden="true"></span> Seattle-based nonprofit supporting education in Ethiopia</div>
+        <h1>We support elementary students in rural Ethiopia by building schools and providing educational resources so that every child can learn to read, write, and achieve elementary school proficiency.</h1>
+        <p class="lead">Founded by Surafel (Sasu) Techane through TeffLabs, the Ethiopian Schools Project channels proceeds from TeffBar sales and community donations to construct schools and deliver learning materials in underserved Ethiopian communities. We partner with local educators and families to create sustainable educational opportunities focused on literacy and foundational learning.</p>
+        <p class="small"><strong>Legacy:</strong> Founded in 2002, our earliest major effort supported the renovation and expansion of Armania Elementary &amp; Junior Secondary School in Armania Kebele, Tarmaber Woreda (North Shoa), Ethiopia.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-donate" href="donate.html">Donate</a>
+          <a class="btn btn-primary" href="programs.html">Explore programs</a>
+          <a class="btn" href="contact.html">Volunteer / Partner</a>
         </div>
-        <div class="hr"></div>
-        <small>
-          Suggested next step: add your donation link (PayPal/Donorbox/Stripe, etc.) on the <a href="donate.html">Donate</a> page.
-        </small>
       </div>
-    </aside>
+<h1>We support elementary students in rural Ethiopia by building schools and providing educational resources so that every child can learn to read, write, and achieve elementary school proficiency.</h1>
+        <p class="lead">Founded by Surafel (Sasu) Techane through TeffLabs, the Ethiopian Schools Project channels proceeds from TeffBar sales and community donations to construct schools and deliver learning materials in underserved Ethiopian communities. We partner with local educators and families to create sustainable educational opportunities focused on literacy and foundational learning.<br/><span class="small">Ethiopian Schools Project is a 501(c)(3) public charity based in Seattle, Washington (EIN: 46-2259859).</span></p>
+        <div class="hero-ctas">
+          <a class="btn btn-donate" href="donate.html">Donate</a>
+          <a class="btn btn-primary" href="programs.html">Explore programs</a>
+          <a class="btn" href="contact.html">Volunteer / Partner</a>
+        </div>
+        </div>
+
+      <aside class="panel" aria-label="Quick facts">
+        <h2>Quick facts</h2>
+        <p><strong>Location:</strong> Seattle, WA</p>
+        <p><strong>Tax status:</strong> 501(c)(3) public charity</p>
+        <p><strong>EIN:</strong> 46-2259859</p>
+        <div style="height:12px;"></div>
+        <p class="small">Contact: <a href="mailto:Sasutm27@gmail.com">Sasutm27@gmail.com</a></p>
+        <figure class="panel-media">
+          <img src="assets/legacy-students.jpg" alt="Students learning together in a classroom in rural Ethiopia." loading="lazy" />
+          <figcaption class="small">Learning starts with safe spaces and essential materials.</figcaption>
+        </figure>
+      </aside>
+    </div>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <h2>What we do</h2>
-    <p>
-      Add 2–3 sentences describing the projects you fund (for example: classroom improvements, learning materials,
-      libraries, tutoring support, technology access, scholarships, teacher development, etc.).
-      Keep it specific and measurable when you can.
+    <h2>Our program areas</h2>
+    <p class="section-lead">
+      We focus on literacy and foundational learning by supporting rural Ethiopian schools with materials, infrastructure, and student support.
     </p>
 
-    <div class="grid" style="margin-top:14px">
-      <div class="card">
-        <div class="pill">
-          <span class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M7 7v12m10-12v12M6 19h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </span>
-          <span>School essentials</span>
-        </div>
-        <h3>Supplies & learning materials</h3>
-        <p>Describe what you provide (books, desks, lab materials, uniforms, etc.) and how you decide where they go.</p>
+    <div class="grid" role="list">
+      <div class="card" role="listitem">
+        <div class="badge">📚 School essentials</div>
+        <h3>Learning materials for grades 1–8</h3>
+        <p>We provide textbooks, writing materials, educational posters, and learning supplies to schools in rural Ethiopia where resources are scarce. Materials are selected based on Ethiopian curriculum requirements for grades 1-8, with emphasis on Amharic and English literacy development.</p>
       </div>
 
-      <div class="card">
-        <div class="pill">
-          <span class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M12 4l8 4-8 4-8-4 8-4Z" stroke="currentColor" stroke-width="2"/><path d="M4 12v6l8 4 8-4v-6" stroke="currentColor" stroke-width="2"/></svg>
-          </span>
-          <span>School improvements</span>
-        </div>
-        <h3>Projects that improve classrooms</h3>
-        <p>Explain typical projects (repairs, safe water, sanitation, libraries, solar lighting, internet, etc.).</p>
+      <div class="card" role="listitem">
+        <div class="badge">🏫 School improvements</div>
+        <h3>Classrooms, libraries, and infrastructure</h3>
+        <p>We fund construction of new classrooms, library spaces, and essential infrastructure including clean water access, sanitation facilities, and solar power for lighting. Each project is developed in partnership with local communities to ensure long-term sustainability and maintenance.</p>
       </div>
 
-      <div class="card">
-        <div class="pill">
-          <span class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M7 11a5 5 0 0 1 10 0v7H7v-7Z" stroke="currentColor" stroke-width="2"/><path d="M9 18v2m6-2v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </span>
-          <span>Student support</span>
-        </div>
+      <div class="card" role="listitem">
+        <div class="badge">🎒 Student support</div>
         <h3>Removing barriers to learning</h3>
-        <p>Share how you support students (transportation, fees, mentorship, scholarships, meals, etc.).</p>
+        <p>We remove barriers to education by providing school uniforms, covering enrollment fees, offering tutoring programs in reading and writing, and supporting meal programs to ensure students can focus on learning.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="video" class="section">
+<section class="section">
   <div class="container">
     <h2>Featured video</h2>
-    <p>Here’s the video you shared. It’s embedded with YouTube’s “privacy-enhanced” <code>youtube-nocookie.com</code> player.</p>
-
-    <div class="video-wrap" style="margin-top:12px">
+    <p class="section-lead">Learn more about the Ethiopian Schools Project.</p>
+    <div class="video-wrap">
       <iframe
-        class="video"
         src="https://www.youtube-nocookie.com/embed/-aW4RWFJsZ4"
         title="Ethiopian Schools Project video"
         loading="lazy"
@@ -172,55 +132,100 @@
 
 <section class="section">
   <div class="container">
-    <h2>Get involved</h2>
-    <p>Make it easy for supporters to take a next step.</p>
+    <h2>Impact</h2>
+    <p class="section-lead">Replace the dashes with real, verifiable outcomes (and link to reports or updates).</p>
 
-    <div class="grid" style="margin-top:14px">
-      <div class="card">
-        <h3>Donate</h3>
-        <p>Direct donations fund school projects and student support.</p>
-        <a class="btn primary" href="donate.html">Go to Donate</a>
+    <div class="metrics">
+      <div class="metric">
+        <div class="num">TBA</div>
+        <div class="label">Schools supported</div>
       </div>
-      <div class="card">
-        <h3>Volunteer</h3>
-        <p>Describe volunteer roles: events, outreach, fundraising, admin, program coordination.</p>
-        <a class="btn" href="contact.html">Contact us</a>
+      <div class="metric">
+        <div class="num">TBA</div>
+        <div class="label">Students reached</div>
       </div>
-      <div class="card">
-        <h3>Partner</h3>
-        <p>Invite businesses, faith communities, and groups to sponsor a project or match donations.</p>
-        <a class="btn" href="contact.html">Partner with us</a>
+      <div class="metric">
+        <div class="num">TBA</div>
+        <div class="label">Books / supplies delivered</div>
       </div>
     </div>
   </div>
 </section>
 
-  </main>
-
-  <footer>
-    <div class="container footer-grid">
+<section class="section">
+  <div class="container">
+    <div class="callout">
       <div>
-        <strong>Ethiopian Schools Project</strong><br/>
-        <small>Seattle, WA • EIN: 46-2259859 • 501(c)(3) Public Charity</small>
-        <div class="hr"></div>
-        <small>
-          Donations are tax-deductible to the extent allowed by law. This site is a project template—replace placeholder content with your organization’s official wording, photos, and links.
-        </small>
+        <h2 style="margin:0 0 6px;">Ready to support a school project?</h2>
+        <div class="small">Your gift helps fund materials and improvements that students and teachers can use right away.</div>
       </div>
       <div>
-        <div class="footer-links" aria-label="Footer links">
-          <a href="about.html">About</a>
-          <a href="programs.html">Programs</a>
-          <a href="impact.html">Impact</a>
-          <a href="donate.html">Donate</a>
-          <a href="contact.html">Contact</a>
+        <a class="btn btn-donate" href="donate.html">Donate now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+
+<section class="section">
+  <div class="container">
+    <h2>Get involved</h2>
+    <p class="section-lead">There are many ways to support Ethiopian education—whether you give, volunteer, or partner with us.</p>
+
+    <div class="grid" role="list">
+      <div class="card" role="listitem">
+        <div class="badge">🙌 Volunteer</div>
+        <h3>Share your time and skills</h3>
+        <p>Join us in supporting Ethiopian education through fundraising events, awareness campaigns, or by sharing your professional skills in education, construction project management, or nonprofit operations.</p>
+      </div>
+
+      <div class="card" role="listitem">
+        <div class="badge">🤝 Partners</div>
+        <h3>Partner for educational equity</h3>
+        <p>We welcome partnerships with businesses, faith communities, and foundations who share our commitment to educational equity. TeffBar sales and corporate sponsorships directly fund school construction and literacy programs.</p>
+      </div>
+    </div>
+
+    <div style="height:14px;"></div>
+    <a class="btn btn-primary" href="contact.html">Contact us</a>
+  </div>
+</section>
+
+</main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <strong>Ethiopian Schools Project</strong>
+          <div class="small">Seattle, WA • EIN: 46-2259859 • 501(c)(3) public charity</div>
+          <p class="small" style="margin-top:10px;">
+            Contributions are tax-deductible to the extent permitted by law.
+          </p>
+          <p class="small">
+            <strong>Update this contact info:</strong><br/>
+            Email: <a href="mailto:Sasutm27@gmail.com">Sasutm27@gmail.com</a><br/>
+            Phone: (000) 000-0000
+          </p>
+          <p class="small">
+            <strong>Fundraising disclosure (Washington):</strong><br/>
+            Ethiopian Schools Project is located in Seattle, WA. Additional information may be available from the Washington Secretary of State’s Charities Program: call 360-725-0377 or visit ccfs.sos.wa.gov.
+          </p>
         </div>
-        <div class="hr"></div>
-        <small>© <span data-year></span> Ethiopian Schools Project</small>
+        <div class="footer-links small">
+          <a href="privacy.html">Privacy</a>
+          <a href="contact.html">Contact</a>
+          <a href="donate.html">Donate</a>
+        </div>
+      </div>
+      <hr class="sep" />
+      <div class="small" style="padding:12px 0;">
+        © <span data-year>2026</span> Ethiopian Schools Project. All rights reserved.
       </div>
     </div>
   </footer>
 
-  <script src="assets/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

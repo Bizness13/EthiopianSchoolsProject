@@ -1,61 +1,56 @@
-# Ethiopian Schools Project — Website Starter (Static HTML)
+# Ethiopian Schools Project – Starter Website
 
-This is a lightweight, fast static site you can deploy in minutes.
+This folder contains a lightweight static website starter for **ethiopianschoolsproject.org**.
 
-## What’s included
+## Files
 
-- `index.html` (home page, includes the YouTube video embed)
-- `about.html`, `programs.html`, `impact.html`, `donate.html`, `contact.html`
-- `assets/styles.css` (site styling)
-- `assets/main.js` (mobile menu + footer year)
-- `robots.txt` + `sitemap.xml`
+- `index.html` – Home
+- `about.html`
+- `programs.html`
+- `impact.html`
+- `donate.html`
+- `contact.html` – includes a Netlify-compatible contact form
+- `privacy.html`
+- `css/styles.css` – site styling
+- `js/main.js` – small nav + footer year script
+- `assets/` – placeholder logo + favicon
 
-## Customize text in 10 minutes
+## Customize (recommended)
 
-Open these files and search for placeholders:
+1. Update the **mission** and **program descriptions**
+2. Add **real impact stats** (only what you can verify)
+3. Add a real **contact phone**, **email**, and **mailing address**
+4. Add your donation platform embed code to `donate.html`
+5. Replace `assets/logo.svg` with your logo
 
-- `YOUR_DONATION_LINK_HERE` (in `donate.html`)
-- `YOUR_EMAIL_HERE` (in `contact.html`)
-- Replace the “Mission” placeholder text (in `index.html` and `about.html`)
-- Replace “Program 1/2/3” content (in `programs.html`)
-- Replace impact numbers (in `impact.html`)
+## Publish Options
 
-## Add your logo / photos
+### Option A: Netlify (free & easy)
 
-- Replace the gradient “mark” in the header (CSS) or update `assets/img/logo.svg`.
-- Add photos in `assets/img/` and reference them in the HTML.
+1. Create a Netlify account
+2. Drag-and-drop this folder into Netlify “Deploys” **OR** connect a GitHub repo
+3. Netlify will give you a temporary URL
+4. In Netlify: **Domain settings → Add custom domain** → `ethiopianschoolsproject.org`
+5. Netlify will tell you what DNS records to add at your domain registrar (usually CNAME/A records)
 
-## Deploy options
+**Contact form:** The form in `contact.html` works if you deploy on Netlify.
 
-### Option A — Netlify (easy + free)
+### Option B: Cloudflare Pages (free)
 
-1. Create an account at Netlify.
-2. Drag-and-drop the entire folder contents into Netlify (“Deploy manually”).
-3. In Netlify: **Site settings → Domain management → Add custom domain**
-4. Follow Netlify’s DNS instructions (either change nameservers, or add A/CNAME records).
+1. Create a Cloudflare account
+2. Add your domain and set Cloudflare nameservers at your registrar
+3. Create a **Pages** project (upload via GitHub)
+4. Set build settings to “None” (this is plain HTML)
+5. Add the custom domain `ethiopianschoolsproject.org`
 
-**Bonus:** The contact form uses `data-netlify="true"` and can work on Netlify with no backend.
+### Option C: Any web host
 
-### Option B — Cloudflare Pages (fast + free)
+Upload all files via your host’s file manager or FTP to the `public_html` (or equivalent) directory.
 
-1. Create a Cloudflare account.
-2. Create a Pages project from a Git repo (or upload via Wrangler).
-3. Add your custom domain and follow DNS prompts.
+## Notes
 
-### Option C — GitHub Pages
+- This site is static: no database required.
+- For donations, use a trusted payment processor and embed their form.
+- Review Washington State fundraising disclosure requirements and update the wording to match your fundraising method(s).
 
-1. Create a repo and upload the files.
-2. Enable Pages.
-3. Add a `CNAME` file with: `ethiopianschoolsproject.org`
-4. Point your domain DNS to GitHub Pages.
-
-## YouTube video
-
-The home page embeds your YouTube video using the privacy-enhanced player:
-
-`https://www.youtube-nocookie.com/embed/-aW4RWFJsZ4`
-
-If you ever need to swap it, replace the video ID in `index.html`.
-
----
-Generated: 2026-01-06
+© 2026 Ethiopian Schools Project
