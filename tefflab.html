@@ -80,6 +80,23 @@
   html, body{ overflow-x:hidden; }
   .tefflab-media-box{ aspect-ratio: 3 / 2; }
 }
+
+/* TeffBar gallery — larger cards */
+.teffbar-gallery{ grid-template-columns: repeat(2, 1fr); }
+.teffbar-gallery .tefflab-media-box{ aspect-ratio: 16 / 10; }
+.teffbar-gallery > *:last-child{ grid-column: 1 / -1; }
+@media (max-width: 980px){
+  .teffbar-gallery{ grid-template-columns: 1fr; }
+  .teffbar-gallery > *:last-child{ grid-column: auto; }
+}
+
+/* NYU image — bigger feature */
+.nyu-two-col{ grid-template-columns: .9fr 1.1fr; }
+.nyu-hero-img .tefflab-media-box{ aspect-ratio: 4 / 3; }
+@media (max-width: 980px){
+  .nyu-two-col{ grid-template-columns: 1fr; }
+}
+
 </style>
 
 
@@ -142,28 +159,7 @@
           </div>
         </div>
         <div class="tefflab-gallery-grid">
-          <figure class="card tefflab-frame tefflab-stack">
-            
-            <div class="tefflab-media-box">
-              <img src="images/IMG_1368.jpg" alt="Sasu with his mother" loading="lazy" >
-            </div>
-          
-</figure>
-          <figure class="card tefflab-frame tefflab-stack">
-            
-            <div class="tefflab-media-box">
-              <img src="images/IMG_0249.jpg" alt="Sasu being read to by his father" loading="lazy" >
-            </div>
-          
-</figure>
-          <figure class="card tefflab-frame tefflab-stack">
-            
-            <div class="tefflab-media-box">
-              <img src="images/IMG_0248.jpg" alt="Sasu with his father on a school day" loading="lazy" >
-            </div>
-          
-</figure>
-        </div>
+</div>
       </div>
     </section>
     <section class="section">
@@ -209,9 +205,8 @@
               While studying at NYU, Sasu developed TeffLab as a mission-driven venture—using innovation, culture, and entrepreneurship to create opportunity and support education.
             </p>
           </div>
-          <a class="btn btn-outline" href="https://www.youtube.com/watch?v=oSK_6gP9NCI" target="_blank" rel="noopener">Watch NYU Talk (YouTube)</a>
         </div>
-        <div class="tefflab-two-col">
+        <div class="tefflab-two-col nyu-two-col">
           <div class="card">
             <h3 style="margin-top:0">Pitch highlights</h3>
             <ul>
@@ -221,7 +216,7 @@
               <li><strong>Community:</strong> farmers markets and pop-ups as a place to connect</li>
             </ul>
           </div>
-          <figure class="card tefflab-frame tefflab-stack">
+          <figure class="card tefflab-frame tefflab-stack nyu-hero-img">
             
             <div class="tefflab-media-box">
               <img src="images/DSCF0326.jpg" alt="Portrait of Sasu" loading="lazy" >
@@ -242,7 +237,7 @@
             </p>
           </div>
         </div>
-        <div class="tefflab-gallery-grid">
+        <div class="tefflab-gallery-grid teffbar-gallery">
           <figure class="card tefflab-frame tefflab-stack">
             
             <div class="tefflab-media-box">
@@ -267,7 +262,7 @@
         </div>
       </div>
     </section>
-    <section class="section section-partner" id="teffbar"><div class="container"><div class="partner-grid"><div class="partner-copy"><h2>TeffBar &amp; TeffLabs</h2><p>TeffBar is a purpose-driven Ethiopian-American snack foods project powered by teff. Its mission ties food entrepreneurship to impact—supporting rural education in Ethiopia and helping fund essential school supplies through the Ethiopian Schools Project.</p><p>TeffLabs expands this work—bringing the story, culture, and future of teff to new audiences. These videos introduce the journey and why it matters.</p><div class="partner-actions"><a class="btn btn-primary" href="https://www.youtube.com/watch?v=oSK_6gP9NCI" rel="noopener" target="_blank">Watch TeffBar</a><a class="btn btn-outline" href="https://www.youtube.com/shorts/XO9nGL_xd_Q" rel="noopener" target="_blank">TeffLabs Short</a></div></div><div class="partner-media"><div class="video-grid"><div class="video-wrap"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/oSK_6gP9NCI" title="TeffBar — TeffLabs"></iframe></div><div class="video-wrap"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/XO9nGL_xd_Q" title="TeffLabs — Short"></iframe></div></div></div></div></div></section>
+    <section class="section section-partner" id="teffbar"><div class="container"><div class="partner-grid"><div class="partner-copy"><h2>TeffBar &amp; TeffLabs</h2><p>TeffBar is a purpose-driven Ethiopian-American snack foods project powered by teff. Its mission ties food entrepreneurship to impact—supporting rural education in Ethiopia and helping fund essential school supplies through the Ethiopian Schools Project.</p><p>TeffLabs expands this work—bringing the story, culture, and future of teff to new audiences. These videos introduce the journey and why it matters.</p><div class="partner-actions"><a class="btn btn-primary" href="https://www.youtube.com/shorts/XO9nGL_xd_Q" rel="noopener" target="_blank">Farmers Market Video</a></div></div><div class="partner-media"><div class="video-grid"><div class="video-wrap"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/XO9nGL_xd_Q" title="TeffLabs — Short"></iframe></div></div></div></div></div></section>
     <section class="section white">
       <div class="container">
         <div class="section-head">
