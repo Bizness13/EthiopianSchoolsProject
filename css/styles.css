@@ -424,3 +424,9 @@ small,.small{color:var(--muted); font-size:.95rem}
   html{scroll-behavior:auto}
   .btn,.card,.carousel-inner{transition:none}
 }
+
+
+
+/* Inline SVG icons */
+.icon-svg{width:30px;height:30px;display:block;}
+.icon-arrow{width:18px;height:18px;display:inline-block;vertical-align:-3px;margin-left:6px;}
