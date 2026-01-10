@@ -333,7 +333,13 @@ small,.small{color:var(--muted); font-size:.95rem}
   padding:56px 0 0;
 }
 .footer a{color:#cfe0f2}
-.footer .cols{display:grid; grid-template-columns:1.2fr 1fr 1fr 1.1fr; gap:22px; padding-bottom:32px}
+.footer .cols{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+  gap:28px;
+  align-items:start;
+}
+
 .footer h3{color:#fff; font-size:1rem}
 .footer p{color:#cfe0f2}
 .footer .newsletter{
