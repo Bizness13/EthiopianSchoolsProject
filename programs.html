@@ -4,129 +4,238 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Programs | Ethiopian Schools Project</title>
-  <meta name="description" content="Explore programs and school project areas supported by Ethiopian Schools Project." />
+  <meta name="description" content="Explore Ethiopian Schools Project programs: literacy, infrastructure, and student support." />
   <meta name="theme-color" content="#ffffff" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="css/styles.css" />
   <meta property="og:title" content="Programs | Ethiopian Schools Project" />
-  <meta property="og:description" content="Explore programs and school project areas supported by Ethiopian Schools Project." />
+  <meta property="og:description" content="Explore Ethiopian Schools Project programs: literacy, infrastructure, and student support." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://ethiopianschoolsproject.org/programs.html" />
-  <meta property="og:image" content="https://ethiopianschoolsproject.org/assets/og-image.png" />
+  <meta property="og:url" content="https://bizness13.github.io/EthiopianSchoolsProject/programs.html" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <header>
+<a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
     <div class="container">
-      <div class="nav">
+      <div class="navbar">
         <a class="brand" href="index.html" aria-label="Ethiopian Schools Project home">
-          <img src="assets/logo.svg" alt="" />
-          <span>Ethiopian Schools Project</span>
+          <div class="brand-mark" aria-hidden="true"></div>
+          <div class="brand-title">
+            <strong>Ethiopian Schools Project</strong>
+            <span>Education • Access • Opportunity</span>
+          </div>
         </a>
 
-        <nav id="primary-nav" class="nav-links" data-nav-links aria-label="Primary">
+        <nav class="nav-links" aria-label="Primary">
           <a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="programs.html" aria-current="page">Programs</a>
-<a href="impact.html">Impact</a>
-<a href="donate.html">Donate</a>
-<a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
+          <a href="programs.html" aria-current="page">Programs</a>
+          <a href="impact.html">Impact</a>
+          <a href="get-involved.html">Get Involved</a>
+          <a href="contact.html">Contact</a>
+          <a class="btn btn-primary nav-cta" href="donate.html">DONATE</a>
         </nav>
 
-        <div class="nav-actions">
-          <button class="btn mobile-toggle" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">
-            Menu
-          </button>
-          <a class="btn btn-primary" href="programs.html">What we do</a>
-          <a class="btn btn-donate" href="donate.html">Donate</a>
+        <button class="mobile-toggle" data-mobile-toggle aria-expanded="false" aria-controls="mobile-panel">
+          <span aria-hidden="true">☰</span> <span class="small" style="font-weight:900">Menu</span>
+        </button>
+      </div>
+
+      <div class="mobile-panel" id="mobile-panel" data-mobile-panel>
+        <div class="stack">
+          <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="programs.html" aria-current="page">Programs</a>
+            <a href="impact.html">Impact</a>
+            <a href="get-involved.html">Get Involved</a>
+            <a href="contact.html">Contact</a>
+            <a class="btn btn-primary" href="donate.html">Donate</a>
         </div>
       </div>
     </div>
   </header>
-
   <main id="main">
-  <section class="page-hero">
-    <div class="container">
-      <h1>Programs</h1>
-<div class="notice">
-        <strong>Built on a legacy:</strong> Our work is inspired by early community-led efforts (including the 2002 Armania School project) that combined classrooms, learning materials, and essential health/first-aid support to help students thrive.
-      </div>
-      <p class="lead">Our work centers on elementary literacy, safe learning spaces, and removing barriers so students can succeed.</p>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="grid">
-        <div class="card" style="grid-column: span 12;">
-          <h2 style="margin-top:0;">1) Reading &amp; Writing Essentials</h2>
-          <p>We supply textbooks, workbooks, pencils, paper, and educational materials aligned with Ethiopian elementary curriculum standards. Our focus is on Amharic and English literacy materials for grades 1-8, ensuring students have the tools they need to develop strong reading and writing skills.</p>
-          <p class="small"><strong>Who it helps:</strong> Elementary students in rural schools with limited access to books and supplies.</p>
-          <p class="small"><strong>Impact metrics:</strong> Number of students receiving materials, number of books distributed, schools supplied.</p>
+    <section class="section white">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Programs</h2>
+            <p>Each initiative is designed with local partners and focused on what most directly improves learning outcomes.</p>
+          </div>
+          <a class="btn btn-primary" href="donate.html">Support a program</a>
         </div>
 
-        <div class="card" style="grid-column: span 12;">
-          <h2 style="margin-top:0;">2) Building Learning Spaces</h2>
-          <p>We construct new classrooms, library buildings, and essential infrastructure in communities where school facilities are inadequate or non-existent. Projects include classroom construction, library spaces, clean water systems, latrines, and solar lighting. Each project is designed with community input and built to serve students for decades.</p>
-          <p class="small"><strong>Project workflow:</strong> Community needs assessment → Design with local input → Construction with local labor → Community celebration and handover → Ongoing maintenance support.</p>
-          <p class="small"><strong>Impact metrics:</strong> Number of classrooms built, schools constructed, students served by new facilities.</p>
-        </div>
+        <div class="grid grid-3">
+          <article class="card" id="literacy" data-tone="primary">
+            <div class="icon" style="color:var(--primary)"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5.5C4 4.12 5.12 3 6.5 3H20v16.5c0 1.38-1.12 2.5-2.5 2.5H6.5C5.12 22 4 20.88 4 19.5V5.5Z" stroke="currentColor" stroke-width="2"/><path d="M20 18H6.8c-1.55 0-2.8 1.12-2.8 2.5" stroke="currentColor" stroke-width="2"/><path d="M8 7h8M8 10h8M8 13h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+            <h3>Reading & Writing Essentials</h3>
+            <p>We strengthen literacy by delivering books and materials that make daily practice possible and engaging.</p>
+            <div class="stat">15,000+ books distributed annually</div>
+          </article>
 
-        <div class="card" style="grid-column: span 12;">
-          <h2 style="margin-top:0;">3) Removing Barriers to Learning</h2>
-          <p>We help students stay in school and succeed by covering costs that families cannot afford. This includes school uniforms, enrollment fees, supplementary tutoring in reading and writing, and support for school meal programs. Our goal is to ensure that financial barriers don&#x27;t prevent children from accessing education.</p>
-          <p class="small"><strong>Who it helps:</strong> Students from low-income families in rural communities.</p>
-          <p class="small"><strong>Support types:</strong> Uniforms, fees, tutoring, meals, mentorship.</p>
-          <p class="small"><strong>Impact metrics:</strong> Number of students supported, retention rates, literacy improvement.</p>
-        </div>
+          <article class="card" id="infrastructure" data-tone="blue">
+            <div class="icon" style="color:var(--secondary)"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 10.5 12 5l9 5.5-9 5.5-9-5.5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M6 12.5V19c0 .9 2.7 2 6 2s6-1.1 6-2v-6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M21 10.5v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+            <h3>Building Learning Spaces</h3>
+            <p>We help communities build and improve classrooms and libraries—safe spaces where learning can happen year-round.</p>
+            <div class="stat">50+ classrooms built since 2002</div>
+            <p class="small" style="margin-top:12px">Integration point: before/after slider (ready for project photos).</p>
+          </article>
 
-        <div class="card" style="grid-column: span 12;">
-          <h2 style="margin-top:0;">Where we work</h2>
-          <ul class="list">
-            <li><strong>Amhara Region:</strong> TBA — Projects since TBA</li>
-            <li><strong>Oromia Region:</strong> TBA — Projects since TBA</li>
-            <li><strong>SNNPR (Southern Nations):</strong> TBA — Projects since TBA</li>
-            <li><strong>Tigray Region:</strong> TBA — Projects since TBA</li>
-          </ul>
-          <p class="small">As you confirm project sites, update this section with specific schools and communities.</p>
+          <article class="card" id="support" data-tone="gold">
+            <div class="icon" style="color:var(--accent)"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 4 2 9l10 5 10-5-10-5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M6 11v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M22 10v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M12 14c-1.4 0-2.7-.23-3.75-.62" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+            <h3>Removing Barriers</h3>
+            <p>We provide practical support so students can attend school consistently and stay on track.</p>
+            <div class="stat">500+ students supported yearly</div>
+            <p class="small" style="margin-top:12px">Integration point: student quotes and testimonials.</p>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
-</main>
+    </section>
 
-  <footer>
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Where we work</h2>
+            <p>Our projects span multiple regions across Ethiopia, selected in partnership with communities and local leaders.</p>
+          </div>
+          <a class="btn btn-ghost" href="contact.html">Discuss a project site</a>
+        </div>
+
+        <div class="map-wrap">
+          <div class="map-card" data-map aria-label="Interactive map of Ethiopia">
+            <div class="ethiopia-map">
+              <!-- Light silhouette for context -->
+              <svg viewBox="0 0 200 250" aria-hidden="true">
+                <path d="M110 10c18 7 28 23 35 35 11 18 25 30 34 46 9 15 13 32 5 49-9 19-30 27-37 46-7 20 2 37-4 56-8 24-33 43-57 47-31 5-59-12-70-41-9-23 1-41 7-62 5-17-4-34 1-49 6-19 28-25 34-43 7-21-8-37 3-57 9-17 30-21 49-27Z" fill="#004E89"/>
+              </svg>
+
+              <button class="hotspot" type="button" data-hotspot data-tone="primary"
+                style="left:45%; top:34%" data-x="45" data-y="34"
+                data-title="Amhara Region" data-copy="Community-led school support and learning materials."></button>
+
+              <button class="hotspot" type="button" data-hotspot data-tone="gold"
+                style="left:56%; top:52%" data-x="56" data-y="52"
+                data-title="Oromia Region" data-copy="School improvements and student support initiatives."></button>
+
+              <button class="hotspot" type="button" data-hotspot
+                style="left:52%; top:18%" data-x="52" data-y="18"
+                data-title="Tigray Region" data-copy="Focused support through partner-led education projects."></button>
+
+              <button class="hotspot" type="button" data-hotspot data-tone="primary"
+                style="left:52%; top:60%" data-x="52" data-y="60"
+                data-title="SNNPR" data-copy="Learning materials and classroom support with local partners."></button>
+
+              <button class="hotspot" type="button" data-hotspot data-tone="gold"
+                style="left:60%; top:46%" data-x="60" data-y="46"
+                data-title="Addis Ababa" data-copy="Coordination hub for partner engagement and logistics."></button>
+
+              <div class="tooltip" data-tooltip role="dialog" aria-live="polite"></div>
+            </div>
+
+            <p class="small" style="margin:14px 0 0">Click a marker to preview region information. Add specific school names and locations as projects are confirmed.</p>
+          </div>
+
+          <div class="map-card">
+            <h3 style="margin-top:0">How project sites are selected</h3>
+            <p>We prioritize communities with limited learning materials and inadequate classrooms, and we coordinate with local stakeholders to align on needs and delivery.</p>
+            <ul>
+              <li><strong>Local partnership:</strong> community and school leadership co-designs scope</li>
+              <li><strong>Practical logistics:</strong> materials and construction that can be maintained locally</li>
+              <li><strong>Measurable outcomes:</strong> classroom capacity, access to books, and attendance support</li>
+            </ul>
+            <div style="margin-top:14px">
+              <a class="btn btn-primary" href="donate.html">Fund a project</a>
+              <a class="btn btn-ghost" href="impact.html">See results</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section white">
+      <div class="container">
+        <div class="cta-band">
+          <div>
+            <h3 style="margin:0 0 6px">Want to sponsor materials for a classroom?</h3>
+            <p class="small" style="margin:0">We can share current needs and ways to support specific projects.</p>
+          </div>
+          <a class="btn btn-primary" href="get-involved.html">Get involved</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<footer class="footer">
     <div class="container">
-      <div class="footer-grid">
+      <div class="cols">
         <div>
-          <strong>Ethiopian Schools Project</strong>
-          <div class="small">Seattle, WA • EIN: 46-2259859 • 501(c)(3) public charity</div>
-          <p class="small" style="margin-top:10px;">
-            Contributions are tax-deductible to the extent permitted by law.
-          </p>
-          <p class="small">
-            <strong>Update this contact info:</strong><br/>
-            Email: <a href="mailto:Sasutm27@gmail.com">Sasutm27@gmail.com</a><br/>
-            Phone: (000) 000-0000
-          </p>
-          <p class="small">
-            <strong>Fundraising disclosure (Washington):</strong><br/>
-            Ethiopian Schools Project is located in Seattle, WA. Additional information may be available from the Washington Secretary of State’s Charities Program: call 360-725-0377 or visit ccfs.sos.wa.gov.
-          </p>
+          <div class="brand" style="gap:10px; margin-bottom:10px;">
+            <div class="brand-mark" aria-hidden="true"></div>
+            <div class="brand-title">
+              <strong style="color:#fff">Ethiopian Schools Project</strong>
+              <span style="color:#cfe0f2; opacity:.9">Since 2002</span>
+            </div>
+          </div>
+          <p>We partner with communities to strengthen learning environments—so Ethiopian students can read, learn, and thrive.</p>
+          <p class="small">501(c)(3) registered charity • EIN: 46-2259859</p>
         </div>
-        <div class="footer-links small">
-          <a href="privacy.html">Privacy</a>
-          <a href="contact.html">Contact</a>
-          <a href="donate.html">Donate</a>
+
+        <div>
+          <h3>Quick links</h3>
+          <p><a href="about.html">About</a><br/>
+             <a href="programs.html">Programs</a><br/>
+             <a href="impact.html">Impact</a><br/>
+             <a href="get-involved.html">Get involved</a><br/>
+             <a href="donate.html">Donate</a><br/>
+             <a href="contact.html">Contact</a></p>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+          <p class="small" style="margin-bottom:8px;">Seattle, Washington</p>
+          <p><a href="mailto:Sasutm27@gmail.com">Sasutm27@gmail.com</a></p>
+          <p class="small"><strong>Fundraising disclosure (Washington):</strong> Ethiopian Schools Project is located in Seattle, WA.</p>
+        </div>
+
+        <div>
+          <h3>Newsletter</h3>
+          <p class="small">Get project updates and stories from the field.</p>
+          <form class="newsletter" action="https://example.com" method="post" aria-label="Newsletter signup" onsubmit="return false;">
+            <input type="email" name="email" aria-label="Email address" required />
+            <button class="btn btn-primary" type="submit">Sign up</button>
+          </form>
+          <p class="small" style="margin-top:12px;">Follow: <a href="#" aria-label="Facebook">Facebook</a> · <a href="#" aria-label="Instagram">Instagram</a> · <a href="#" aria-label="YouTube">YouTube</a></p>
         </div>
       </div>
-      <hr class="sep" />
-      <div class="small" style="padding:12px 0;">
-        © <span data-year>2026</span> Ethiopian Schools Project. All rights reserved.
+
+      <div class="bottom">
+        <div>© <span data-year></span> Ethiopian Schools Project. All rights reserved.</div>
+        <div>
+          <a href="privacy.html">Privacy Policy</a> ·
+          <a href="impact.html#reports">Financial Reports</a> ·
+          <a href="impact.html#reports">Annual Reports</a> ·
+          <a href="impact.html#reports">990 Form</a>
+        </div>
       </div>
     </div>
   </footer>
+
+  <div class="sticky-donate" data-sticky-donate>
+    <div class="container">
+      <div class="inner">
+        <div class="note">Give the gift of education today</div>
+        <div class="amounts" aria-label="Quick donation amounts">
+          <button class="pill-btn" type="button" data-amount="25">$25</button>
+          <button class="pill-btn" type="button" data-amount="50">$50</button>
+          <button class="pill-btn" type="button" data-amount="100">$100</button>
+          <button class="pill-btn" type="button" data-amount="custom">Custom</button>
+        </div>
+        <a class="btn btn-primary hide-on-desktop" data-go-donate href="donate.html">Donate</a>
+        <a class="btn btn-primary" data-go-donate href="donate.html">Donate now</a>
+      </div>
+    </div>
+  </div>
 
   <script src="js/main.js"></script>
 </body>

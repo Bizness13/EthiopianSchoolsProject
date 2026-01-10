@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://ethiopianschoolsproject.org/</loc></url>
-  <url><loc>https://ethiopianschoolsproject.org/about.html</loc></url>
-  <url><loc>https://ethiopianschoolsproject.org/programs.html</loc></url>
-  <url><loc>https://ethiopianschoolsproject.org/impact.html</loc></url>
-  <url><loc>https://ethiopianschoolsproject.org/donate.html</loc></url>
-  <url><loc>https://ethiopianschoolsproject.org/contact.html</loc></url>
-  <url><loc>https://ethiopianschoolsproject.org/privacy.html</loc></url>
-</urlset>
+<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <ns0:url><ns0:loc>https://ethiopianschoolsproject.org/</ns0:loc></ns0:url>
+  <ns0:url><ns0:loc>https://ethiopianschoolsproject.org/about.html</ns0:loc></ns0:url>
+  <ns0:url><ns0:loc>https://ethiopianschoolsproject.org/programs.html</ns0:loc></ns0:url>
+  <ns0:url><ns0:loc>https://ethiopianschoolsproject.org/impact.html</ns0:loc></ns0:url>
+  <ns0:url><ns0:loc>https://ethiopianschoolsproject.org/donate.html</ns0:loc></ns0:url>
+  <ns0:url><ns0:loc>https://ethiopianschoolsproject.org/contact.html</ns0:loc></ns0:url>
+  <ns0:url><ns0:loc>https://ethiopianschoolsproject.org/privacy.html</ns0:loc></ns0:url>
+<ns0:url><ns0:loc>https://ethiopianschoolsproject.org/get-involved.html</ns0:loc><ns0:lastmod>2026-01-09</ns0:lastmod></ns0:url></ns0:urlset>
