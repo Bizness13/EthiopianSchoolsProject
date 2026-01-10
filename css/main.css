@@ -37,3 +37,58 @@ img { max-width: 100%; height: auto; }
 
 iframe, video { max-width: 100%; height: auto; }
 .map-frame { max-width: 100%; }
+
+
+/* ===== iOS Safari TeffLab Fixes ===== */
+@supports (-webkit-touch-callout: none) {
+
+  html, body { overflow-x: hidden; }
+
+  .grid,
+  .section-head,
+  .hero-inner {
+    display: block !important;
+  }
+
+  .grid > * {
+    width: 100% !important;
+    margin-bottom: 18px;
+  }
+
+  .hero-actions {
+    display: block;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .tefflab-frame {
+    padding: 10px;
+    border-radius: 14px;
+  }
+
+  .tefflab-frame img {
+    width: 100%;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain;
+  }
+
+  h1 { line-height: 1.2; }
+  h2 { line-height: 1.25; }
+  p  { line-height: 1.55; }
+}
+
+/* Board section styling (About page) */
+.board-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:14px}
+@media(max-width:900px){.board-cards{grid-template-columns:1fr}}
+.board-card{background:#fff;border:1px solid rgba(44,62,80,.10);border-radius:16px;padding:16px;box-shadow:0 10px 24px rgba(0,0,0,.06)}
+.board-card h4{margin:0 0 8px 0;font-size:1.05rem;line-height:1.25}
+.board-card .role{display:inline-block;margin-left:8px;font-weight:600;font-size:.9rem;color:var(--muted)}
+.board-card .bio{margin:0;color:var(--text);opacity:.92}
+.board-card.memorial{background:radial-gradient(900px 380px at 20% 0%, rgba(247,184,1,.12), transparent 60%), #fff}
+.board-card .memorial-note{margin:10px 0 0;color:var(--muted);font-size:.95rem}
+.board-members{columns:2;column-gap:28px;margin-top:12px}
+@media(max-width:700px){.board-members{columns:1}}
