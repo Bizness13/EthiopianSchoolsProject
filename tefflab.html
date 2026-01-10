@@ -8,121 +8,12 @@
   <meta name="theme-color" content="#ffffff" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="css/styles.css" />
-  <meta property="og:title" content="TeffLab | Ethiopian Schools Project" />
-  <meta property="og:description" content="A memorial to Sasu and the TeffLab story—heritage, entrepreneurship, and impact supporting Ethiopian Schools Project." />
+  <meta property="og:title" content="About | Ethiopian Schools Project" />
+  <meta property="og:description" content="Learn about Ethiopian Schools Project: mission, history since 2002, and how we work with communities." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://bizness13.github.io/EthiopianSchoolsProject/tefflab.html" />
+  <meta property="og:url" content="https://bizness13.github.io/EthiopianSchoolsProject/about.html" />
 </head>
 <body>
-
-<style>
-/* TeffLab — consistent image cards (no cropping) */
-.tefflab-frame{
-  border-radius:20px;
-  overflow:hidden;
-  background:
-    radial-gradient(1200px 520px at 20% 0%, rgba(0,78,137,.10), transparent 60%),
-    radial-gradient(900px 420px at 90% 20%, rgba(247,184,1,.10), transparent 55%),
-    #ffffff;
-  border:1px solid rgba(44,62,80,.12);
-  box-shadow: 0 14px 34px rgba(0,0,0,.10);
-  padding:14px;
-  transition: transform .18s ease, box-shadow .18s ease;
-}
-
-.tefflab-media-box{
-  width:100%;
-  aspect-ratio: 3 / 2;          /* consistent sizing across sections */
-  background:#f3f4f6;
-  border-radius:14px;
-  border:1px solid rgba(44,62,80,.10);
-  overflow:hidden;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-
-.tefflab-frame img{
-  width:100%;
-  height:100%;
-  display:block;
-  object-fit:contain;           /* show full image (no cropping) */
-}
-
-/* Subtle “pop” */
-.tefflab-frame:hover{
-  transform: translateY(-2px);
-  box-shadow: 0 18px 44px rgba(0,0,0,.14);
-}
-
-/* Layout helpers (already used in your file) */
-.tefflab-gallery-grid{
-  display:grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
-.tefflab-two-col{
-  display:grid;
-  grid-template-columns: 1.05fr .95fr;
-  gap: 22px;
-  align-items: start;
-}
-
-@media (max-width: 980px){
-  .tefflab-gallery-grid{ grid-template-columns: 1fr; }
-  .tefflab-two-col{ grid-template-columns: 1fr; }
-  .tefflab-frame{ padding:10px; border-radius:18px; }
-}
-
-/* iOS Safari guardrails */
-@supports (-webkit-touch-callout: none){
-  html, body{ overflow-x:hidden; }
-  .tefflab-media-box{ aspect-ratio: 3 / 2; }
-}
-
-/* TeffBar gallery — larger cards */
-.teffbar-gallery{ grid-template-columns: repeat(2, 1fr); }
-.teffbar-gallery .tefflab-media-box{ aspect-ratio: 16 / 10; }
-.teffbar-gallery > *:last-child{ grid-column: 1 / -1; }
-@media (max-width: 980px){
-  .teffbar-gallery{ grid-template-columns: 1fr; }
-  .teffbar-gallery > *:last-child{ grid-column: auto; }
-}
-
-/* NYU image — bigger feature */
-.nyu-two-col{ grid-template-columns: .9fr 1.1fr; }
-.nyu-hero-img .tefflab-media-box{ aspect-ratio: 4 / 3; }
-@media (max-width: 980px){
-  .nyu-two-col{ grid-template-columns: 1fr; }
-}
-
-/* TeffLab — layout refinements */
-.tefflab-gallery-2{ grid-template-columns: repeat(2, 1fr); }
-@media (max-width: 980px){ .tefflab-gallery-2{ grid-template-columns: 1fr; } }
-
-.teffbar-split{
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px;
-  align-items: start;
-}
-.teffbar-video{
-  border-radius: 18px;
-  overflow:hidden;
-  background:#000;
-  box-shadow: 0 14px 34px rgba(0,0,0,0.12);
-}
-.teffbar-video iframe{ width:100%; height:100%; border:0; aspect-ratio: 16 / 9; display:block; }
-@media (max-width: 980px){ .teffbar-split{ grid-template-columns: 1fr; } }
-
-/* Slightly bigger images for TeffBar gallery */
-.teffbar-gallery .tefflab-media-box{ aspect-ratio: 16 / 10; }
-
-/* Legacy text column spacing */
-.legacy-two-col .card{ height: fit-content; }
-
-</style>
-
 <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container">
@@ -134,24 +25,33 @@
             <span>Education • Access • Opportunity</span>
           </div>
         </a>
+
         <nav class="nav-links" aria-label="Primary">
           <a href="index.html">Home</a>
-          <a href="about.html">About</a>
+          <a href="about.html" aria-current="page">About</a>
+          <a href="programs.html">Programs</a>
+          <a href="impact.html">Impact</a>
           <a href="tefflab.html" aria-current="page">TeffLab</a>
 <a href="get-involved.html">Get Involved</a>
           <a href="contact.html">Contact</a>
+          <a class="btn btn-primary nav-cta" href="donate.html">DONATE</a>
         </nav>
+
         <button class="mobile-toggle" data-mobile-toggle aria-expanded="false" aria-controls="mobile-panel">
           <span aria-hidden="true">☰</span> <span class="small" style="font-weight:900">Menu</span>
         </button>
       </div>
+
       <div class="mobile-panel" id="mobile-panel" data-mobile-panel>
         <div class="stack">
           <a href="index.html">Home</a>
-            <a href="about.html">About</a>
+            <a href="about.html" aria-current="page">About</a>
+            <a href="programs.html">Programs</a>
+            <a href="impact.html">Impact</a>
             <a href="tefflab.html" aria-current="page">TeffLab</a>
 <a href="get-involved.html">Get Involved</a>
             <a href="contact.html">Contact</a>
+            <a class="btn btn-primary" href="donate.html">Donate</a>
         </div>
       </div>
     </div>
@@ -164,137 +64,175 @@
         <div class="hero-content" style="max-width: 900px;">
           <h1>TeffLab</h1>
           <p style="font-size: clamp(1.05rem, 2.6vw, 1.35rem);">
-            <strong>In loving memory of Sasu.</strong> honoring his life, his love for Ethiopian heritage,
+            <strong>In loving memory of Sasu.</strong> This page honors his life, his love for Ethiopian heritage,
             and a vision that turned purpose into action—supporting education through TeffLab and the TeffBar.
           </p>
+          <div class="hero-actions">
+            <a class="btn btn-outline" href="#story">Read His Story</a>
+            <a class="btn btn-primary" href="donate.html">Support the Mission</a>
+          </div>
+          <div class="hero-badges" aria-label="Memorial highlights">
+            <span class="pill">TeffLab</span>
+            <span class="pill">TeffBar</span>
+            <span class="pill">Legacy of giving</span>
+          </div>
         </div>
       </div>
     </section>
+
     <section class="section white" id="story">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <h2>Early Cultivation and Inspiration</h2>
-        <p>
-          Sasu’s parents instilled in him a deep love for Ethiopian heritage, community, and learning.
-          That foundation shaped his curiosity—about food, farming, and the ways culture can inspire innovation and impact.
-        </p>
-      </div>
-    </div>
-
-    <div class="tefflab-gallery-grid tefflab-gallery-2">
-      <figure class="card tefflab-frame tefflab-stack">
-        <div class="tefflab-media-box">
-          <img src="images/IMG_1368.jpg" alt="Sasu with his mother" loading="lazy" decoding="async">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>A Tribute to Sasu</h2>
+            <p>
+              Sasu’s parents instilled in him a deep love for Ethiopian heritage, community, and learning.
+              That foundation shaped his curiosity—about food, farming, and the ways culture can inspire innovation and impact.
+            </p>
+          </div>
         </div>
-      </figure>
 
-      <figure class="card tefflab-frame tefflab-stack">
-        <div class="tefflab-media-box">
-          <img src="images/IMG_0249.jpg" alt="Sasu being read to by his father" loading="lazy" decoding="async">
-        </div>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="flowers">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <h2>Cultivation Takes Root</h2>
-        <p>
-          With the grounding of family and heritage, Sasu’s curiosity kept expanding—toward farming, healthy eating, and the joy of cooking. From an early age Sasu was drawn to the relationship between food and wellbeing—how ingredients, culture, and community come together.
-          That curiosity would later shape TeffLab’s mission and the creation of TeffBar.
-        </p>
-      </div>
-    </div>
-
-    <div class="tefflab-two-col">
-      <figure class="card tefflab-frame tefflab-stack">
-        <div class="tefflab-media-box">
-          <img src="images/IMG_0251.jpg" alt="Sasu in a field of flowers" loading="lazy" decoding="async">
-        </div>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="teffbar">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <h2>TeffBar</h2>
-        <p>
-          TeffBar was TeffLab’s flagship product—crafted, shared at farmers markets and pop-ups, and designed to be both nourishing and purposeful.
-          Proceeds helped support Ethiopian Schools Project.
-        </p>
-      </div>
-    </div>
-
-    <div class="teffbar-split">
-      <div class="card">
-        <h3 style="margin-top:0">Farmers Market &amp; Pop-Ups</h3>
-        <p>
-          TeffBar was sold at farmers markets and community events—creating space for conversation, culture, and support for education.
-        </p>
-        <div class="partner-actions" style="margin-top:14px">
-          <a class="btn btn-primary" href="https://www.youtube.com/shorts/XO9nGL_xd_Q" rel="noopener" target="_blank">Watch Farmers Market Video</a>
+        <div class="grid" style="grid-template-columns:repeat(3, 1fr); gap:18px">
+          <figure class="card" style="padding:0; overflow:hidden">
+            <img src="images/IMG_1368.jpg" alt="Sasu with his mother" loading="lazy" style="width:100%; height:260px; object-fit:cover">
+            <figcaption style="padding:14px 16px; color:var(--muted)">Family love and heritage at the heart of his story.</figcaption>
+          </figure>
+          <figure class="card" style="padding:0; overflow:hidden">
+            <img src="images/IMG_0249.jpg" alt="Sasu being read to by his father" loading="lazy" style="width:100%; height:260px; object-fit:cover">
+            <figcaption style="padding:14px 16px; color:var(--muted)">A childhood shaped by books, learning, and encouragement.</figcaption>
+          </figure>
+          <figure class="card" style="padding:0; overflow:hidden">
+            <img src="images/IMG_0248.jpg" alt="Sasu with his father on a school day" loading="lazy" style="width:100%; height:260px; object-fit:cover">
+            <figcaption style="padding:14px 16px; color:var(--muted)">Education and family support—always side by side.</figcaption>
+          </figure>
         </div>
       </div>
+    </section>
 
-      <div class="video-wrap teffbar-video">
-        <iframe
-          src="https://www.youtube-nocookie.com/embed/XO9nGL_xd_Q"
-          title="TeffLabs — Farmers Market Short"
-          loading="lazy"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-      </div>
-    </div>
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Early Curiosity: Farming, Healthy Eating &amp; Cooking</h2>
+            <p>
+              Even early on, Sasu was fascinated by where food comes from, how the land sustains communities,
+              and how healthy eating connects to a thriving life.
+            </p>
+          </div>
+        </div>
 
-    <div class="tefflab-gallery-grid teffbar-gallery" style="margin-top:22px">
-      <figure class="card tefflab-frame tefflab-stack">
-        <div class="tefflab-media-box">
-          <img src="images/IMG_4179.jpg" alt="Sasu sharing TeffBar at a farmers market" loading="lazy" decoding="async">
+        <div class="grid" style="grid-template-columns:1.1fr .9fr; gap:18px">
+          <div class="card" style="padding:0; overflow:hidden">
+            <img src="images/IMG_0251.jpg" alt="Sasu in tulip fields as a child" loading="lazy" style="width:100%; height:360px; object-fit:cover">
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0">A seed planted early</h3>
+            <p>
+              Experiences like time spent in fields sparked a lasting interest in agriculture and nourishment.
+              Later, that same curiosity would be channeled into a mission rooted in Ethiopian teff—the iron-rich supergrain.
+            </p>
+            <ul>
+              <li><strong>Heritage:</strong> pride in Ethiopian culture and ingredients</li>
+              <li><strong>Health:</strong> curiosity about nutrition and wholesome foods</li>
+              <li><strong>Service:</strong> a desire to build something that gives back</li>
+            </ul>
+          </div>
         </div>
-      </figure>
-      <figure class="card tefflab-frame tefflab-stack">
-        <div class="tefflab-media-box">
-          <img src="images/IMG_0651.jpg" alt="TeffBar at a community market pop-up" loading="lazy" decoding="async">
-        </div>
-      </figure>
-      <figure class="card tefflab-frame tefflab-stack">
-        <div class="tefflab-media-box">
-          <img src="images/IMG_7623.jpg" alt="Sasu at the TeffLab booth" loading="lazy" decoding="async">
-        </div>
-      </figure>
-    </div>
-  </div>
-</section>
-    <section class="section white" id="legacy">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <h2>Legacy</h2>
-        <p>
-          Sasu’s work through TeffLab and TeffBar supported the Ethiopian Schools Project’s mission—strengthening literacy, improving learning spaces, and helping remove barriers so students can thrive. Sasu’s legacy lives on through TeffLab, TeffBar, and the students whose lives are touched by education and opportunity.
-          TeffLab was more than a project—it was an expression of identity and service.    
-        </p>
       </div>
-    </div>
-    <div class="container">
-      <figure class="card tefflab-frame tefflab-stack">
-        <div class="tefflab-media-box">
-          <img src="images/IMG_0668.jpg" alt="Sasu with family at Ethiopian community even" loading="lazy" decoding="async">
+    </section>
+
+    <section class="section white">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>From NYU to TeffLab</h2>
+            <p>
+              While studying at NYU, Sasu developed TeffLab as a mission-driven venture—using innovation, culture, and entrepreneurship
+              to create opportunity and support education.
+            </p>
+          </div>
+          <a class="btn btn-outline" href="assets/TeffBar_The_New_Normal.pdf" target="_blank" rel="noopener">View NYU Presentation (PDF)</a>
         </div>
-      </figure>
+
+        <div class="grid" style="grid-template-columns:1fr 1fr; gap:18px">
+          <div class="card">
+            <h3 style="margin-top:0">Pitch highlights</h3>
+            <ul>
+              <li><strong>Product:</strong> a teff-based nutrition bar crafted for everyday energy</li>
+              <li><strong>Story:</strong> a modern expression of Ethiopian heritage through food</li>
+              <li><strong>Impact:</strong> proceeds supporting the Ethiopian Schools Project</li>
+              <li><strong>Community:</strong> farmers markets and pop-ups as a place to connect</li>
+            </ul>
+          </div>
+          <figure class="card" style="padding:0; overflow:hidden">
+            <img src="images/DSCF0326.jpg" alt="Portrait of Sasu" loading="lazy" style="width:100%; height:340px; object-fit:cover">
+            <figcaption style="padding:14px 16px; color:var(--muted)">A vision rooted in culture, community, and compassion.</figcaption>
+          </figure>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-</main>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>The TeffBar</h2>
+            <p>
+              TeffBar became TeffLab’s flagship product—crafted, shared at farmers markets and pop-ups, and designed to be both nourishing
+              and purposeful. Proceeds helped support Ethiopian Schools Project.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid" style="grid-template-columns:repeat(3, 1fr); gap:18px">
+          <figure class="card" style="padding:0; overflow:hidden">
+            <img src="images/IMG_4179.jpg" alt="Sasu sharing TeffBar at a farmers market" loading="lazy" style="width:100%; height:260px; object-fit:cover">
+            <figcaption style="padding:14px 16px; color:var(--muted)">Sharing TeffBar with the community—one conversation at a time.</figcaption>
+          </figure>
+          <figure class="card" style="padding:0; overflow:hidden">
+            <img src="images/IMG_0651.jpg" alt="TeffBar at a community market pop-up" loading="lazy" style="width:100%; height:260px; object-fit:cover">
+            <figcaption style="padding:14px 16px; color:var(--muted)">Farmers markets and pop-ups: community, culture, connection.</figcaption>
+          </figure>
+          <figure class="card" style="padding:0; overflow:hidden">
+            <img src="images/IMG_7623.jpg" alt="Sasu at The Teff Lab booth" loading="lazy" style="width:100%; height:260px; object-fit:cover">
+            <figcaption style="padding:14px 16px; color:var(--muted)">Building a legacy through TeffLab—innovation with purpose.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section white">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Legacy</h2>
+            <p>
+              Sasu’s legacy lives on through TeffLab, TeffBar, and the students whose lives are touched by education and opportunity.
+              This memorial is offered with love—to his parents, family, and community.
+            </p>
+          </div>
+          <a class="btn btn-primary" href="donate.html">Donate in His Honor</a>
+        </div>
+
+        <div class="grid" style="grid-template-columns:1fr 1fr; gap:18px; align-items:stretch">
+          <figure class="card" style="padding:0; overflow:hidden">
+            <img src="images/IMG_0668.jpg" alt="Sasu with family at Ethiopian community event" loading="lazy" style="width:100%; height:340px; object-fit:cover">
+          </figure>
+          <div class="card">
+            <h3 style="margin-top:0">A continuing mission</h3>
+            <p>
+              TeffLab was more than a project—it was an expression of identity and service. By supporting the Ethiopian Schools Project,
+              you help carry forward a story of heritage, learning, and giving back.
+            </p>
+            <p class="small" style="color:var(--muted)">
+              If you have memories, photos, or notes you’d like included, this page can be expanded over time to reflect the community’s love.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
 <footer class="footer">
     <div class="container">
       <div class="cols">
@@ -309,16 +247,19 @@
           <p>We partner with communities to strengthen learning environments—so Ethiopian students can read, learn, and thrive.</p>
           <p class="small">501(c)(3) registered charity • EIN: 46-2259859</p>
         </div>
+
         <div>
           <h3>Quick links</h3>
           <p><a href="about.html">About</a><br/>
-             <br/>
+             <a href="programs.html">Programs</a><br/>
+             <a href="impact.html">Impact</a>
             <a href="tefflab.html">TeffLab</a>
 <br/>
              <a href="get-involved.html">Get involved</a><br/>
              <a href="donate.html">Donate</a><br/>
              <a href="contact.html">Contact</a></p>
         </div>
+
         <div>
           <h3>Contact</h3>
           <p class="small" style="margin-bottom:8px;">Seattle, Washington</p>
@@ -326,14 +267,35 @@
           <p class="small"><strong>Fundraising disclosure (Washington):</strong> Ethiopian Schools Project is located in Seattle, WA.</p>
         </div>
 </div>
+
       <div class="bottom">
         <div>© <span data-year></span> Ethiopian Schools Project. All rights reserved.</div>
         <div>
-          <a href="privacy.html">Privacy Policy</a>
+          <a href="privacy.html">Privacy Policy</a> ·
+          <a href="impact.html#reports">Financial Reports</a> ·
+          <a href="impact.html#reports">Annual Reports</a> ·
+          <a href="impact.html#reports">990 Form</a>
         </div>
       </div>
     </div>
   </footer>
+
+  <div class="sticky-donate" data-sticky-donate>
+    <div class="container">
+      <div class="inner">
+        <div class="note">Give the gift of education today</div>
+        <div class="amounts" aria-label="Quick donation amounts">
+          <button class="pill-btn" type="button" data-amount="25">$25</button>
+          <button class="pill-btn" type="button" data-amount="50">$50</button>
+          <button class="pill-btn" type="button" data-amount="100">$100</button>
+          <button class="pill-btn" type="button" data-amount="custom">Custom</button>
+        </div>
+        <a class="btn btn-primary hide-on-desktop" data-go-donate href="donate.html">Donate</a>
+        <a class="btn btn-primary" data-go-donate href="donate.html">Donate now</a>
+      </div>
+    </div>
+  </div>
+
   <script src="js/main.js"></script>
 </body>
 </html>
