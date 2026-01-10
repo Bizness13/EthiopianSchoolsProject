@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" role="img" aria-label="Ethiopian Schools Project logo">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#078930"/>
+      <stop offset="0.5" stop-color="#FCDD09"/>
+      <stop offset="1" stop-color="#DA121A"/>
+    </linearGradient>
+  </defs>
+  <rect x="6" y="6" width="84" height="84" rx="18" fill="white" stroke="#e2e8f0" stroke-width="3"/>
+  <circle cx="48" cy="44" r="18" fill="url(#g)" opacity="0.9"/>
+  <path d="M24 70h48" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/>
+  <path d="M30 70c2-10 8-16 18-16s16 6 18 16" fill="none" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/>
+</svg>
